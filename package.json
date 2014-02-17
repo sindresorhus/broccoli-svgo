@@ -1,0 +1,41 @@
+{
+  "name": "broccoli-svgo",
+  "version": "0.0.0",
+  "description": "Minimize SVG using SVGO",
+  "license": "MIT",
+  "repository": "sindresorhus/broccoli-svgo",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "broccoli build temp && mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "broccoli-plugin",
+    "svgo",
+    "svg",
+    "image",
+    "img",
+    "min",
+    "minify",
+    "optimize"
+  ],
+  "dependencies": {
+    "broccoli-filter": "0.0.1",
+    "svgo": "~0.4.4",
+    "rsvp": "~3.0.4"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "broccoli": "~0.1.1",
+    "rimraf": "~2.2.6"
+  }
+}
