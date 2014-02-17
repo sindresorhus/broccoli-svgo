@@ -1,6 +1,8 @@
 # [broccoli](https://github.com/joliss/broccoli)-svgo [![Build Status](https://travis-ci.org/sindresorhus/broccoli-svgo.png?branch=master)](https://travis-ci.org/sindresorhus/broccoli-svgo)
 
-> Minimize SVG using [SVGO](https://github.com/svg/svgo)
+> Minify SVG using [SVGO](https://github.com/svg/svgo)
+
+*Issues with the output should be reported on the SVGO [issue tracker](https://github.com/svg/svgo/issues).*
 
 
 ## Install
