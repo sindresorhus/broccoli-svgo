@@ -1,7 +1,7 @@
 {
   "name": "broccoli-svgo",
   "version": "0.1.0",
-  "description": "Minimize SVG using SVGO",
+  "description": "Minify SVG using SVGO",
   "license": "MIT",
   "repository": "sindresorhus/broccoli-svgo",
   "author": {
@@ -26,7 +26,8 @@
     "img",
     "min",
     "minify",
-    "optimize"
+    "optimize",
+    "compress"
   ],
   "dependencies": {
     "broccoli-filter": "0.0.1",
