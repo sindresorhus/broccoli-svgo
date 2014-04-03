@@ -1,4 +1,4 @@
-# [broccoli](https://github.com/joliss/broccoli)-svgo [![Build Status](https://travis-ci.org/sindresorhus/broccoli-svgo.png?branch=master)](https://travis-ci.org/sindresorhus/broccoli-svgo)
+# [broccoli](https://github.com/joliss/broccoli)-svgo [![Build Status](https://travis-ci.org/sindresorhus/broccoli-svgo.svg?branch=master)](https://travis-ci.org/sindresorhus/broccoli-svgo)
 
 > Minify SVG using [SVGO](https://github.com/svg/svgo)
 
@@ -7,12 +7,12 @@
 
 ## Install
 
-```
-npm install --save broccoli-svgo
+```bash
+$ npm install --save broccoli-svgo
 ```
 
 
-## Example
+## Usage
 
 ```js
 var svgo = require('broccoli-svgo');
@@ -31,4 +31,4 @@ tree = svgo(tree, options);
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
