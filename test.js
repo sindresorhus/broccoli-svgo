@@ -8,8 +8,7 @@ afterEach(function () {
 });
 
 it('should minimize SVG', function () {
-	assert.equal(
-		fs.readFileSync('temp/fixture.svg', 'utf8'),
-		fs.readFileSync('fixture/expected.svg', 'utf8')
-	);
+	var actual = fs.statSync('temp/fixture.svg').size;
+	var fixture = fs.statSync('fixture/fixture.svg').size;
+	assert(actual < fixture);
 });
