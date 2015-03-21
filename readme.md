@@ -7,8 +7,8 @@
 
 ## Install
 
-```sh
-$ npm install --save broccoli-svgo
+```
+$ npm install --save-dev broccoli-svgo
 ```
 
 
@@ -22,11 +22,11 @@ tree = svgo(tree, options);
 
 ## API
 
-### svgo(tree, options)
+### svgo(tree, [options])
 
 #### options
 
-[Options](https://github.com/sindresorhus/grunt-svgmin#available-optionsplugins) are passed to SVGO.
+[Options](https://github.com/sindresorhus/grunt-svgmin#available-optionsplugins) are passed to `SVGO`.
 
 
 ## License
