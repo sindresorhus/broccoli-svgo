@@ -30,13 +30,13 @@
     "compress"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.6",
+    "broccoli-filter": "^1.2.2",
     "rsvp": "^3.0.4",
     "svgo": "^0.5.0"
   },
   "devDependencies": {
-    "broccoli": "^0.13.2",
-    "broccoli-cli": "0.0.1",
+    "broccoli": "^0.16.8",
+    "broccoli-cli": "^1.0.0",
     "mocha": "*",
     "rimraf": "^2.2.6"
   }

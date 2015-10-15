@@ -8,6 +8,8 @@ function SvgoFilter(inputTree, options) {
 		return new SvgoFilter(inputTree, options);
 	}
 
+	Filter.call(this, inputTree);
+
 	this.inputTree = inputTree;
 	this.svgo = new SVGO(options);
 }
