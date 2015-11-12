@@ -32,7 +32,7 @@
   "dependencies": {
     "broccoli-filter": "^1.2.2",
     "rsvp": "^3.0.4",
-    "svgo": "^0.5.0"
+    "svgo": "^0.6.0"
   },
   "devDependencies": {
     "broccoli": "^0.16.8",
