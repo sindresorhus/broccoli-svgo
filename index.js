@@ -1,26 +1,24 @@
 'use strict';
-var Filter = require('broccoli-filter');
-var SVGO = require('svgo');
+const Filter = require('broccoli-filter');
+const SVGO = require('svgo');
 
-function SvgoFilter(inputTree, options) {
-	if (!(this instanceof SvgoFilter)) {
-		return new SvgoFilter(inputTree, options);
+module.exports = class extends Filter {
+	constructor(inputTree, options) {
+		super(inputTree);
+
+		this.inputTree = inputTree;
+		this.svgo = new SVGO(options);
 	}
 
-	Filter.call(this, inputTree);
+	get extensions() {
+		return ['svg'];
+	}
 
-	this.inputTree = inputTree;
-	this.svgo = new SVGO(options);
-}
+	get targetExtension() {
+		return 'svg';
+	}
 
-SvgoFilter.prototype = Object.create(Filter.prototype);
-SvgoFilter.prototype.constructor = SvgoFilter;
-
-SvgoFilter.prototype.extensions = ['svg'];
-SvgoFilter.prototype.targetExtension = 'svg';
-
-SvgoFilter.prototype.processString = function (str) {
-	return this.svgo.optimize(str).then(result => result.data);
+	processString(text) {
+		return this.svgo.optimize(text).then(result => result.data);
+	}
 };
-
-module.exports = SvgoFilter;

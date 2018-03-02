@@ -1,14 +1,13 @@
-'use strict';
-var assert = require('assert');
-var fs = require('fs');
-var rimraf = require('rimraf');
+import fs from 'fs';
+import test from 'ava';
+import del from 'del';
 
-afterEach(function () {
-	rimraf.sync('temp');
+test.afterEach(() => {
+	del.sync('temp');
 });
 
-it('should minimize SVG', function () {
-	var actual = fs.statSync('temp/fixture.svg').size;
-	var fixture = fs.statSync('fixture/fixture.svg').size;
-	assert(actual < fixture);
+test('minimizes SVG', t => {
+	const actual = fs.statSync('temp/fixture.svg').size;
+	const fixture = fs.statSync('fixture/fixture.svg').size;
+	t.true(actual < fixture);
 });

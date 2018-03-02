@@ -15,14 +15,14 @@ $ npm install --save-dev broccoli-svgo
 ## Usage
 
 ```js
-var svgo = require('broccoli-svgo');
-tree = svgo(tree, options);
+const SVO = require('broccoli-svgo');
+tree = new SVO(tree, options);
 ```
 
 
 ## API
 
-### svgo(tree, [options])
+### SVGO(tree, [options])
 
 #### options
 
@@ -31,4 +31,4 @@ tree = svgo(tree, options);
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
