@@ -1,6 +1,5 @@
 'use strict';
 var Filter = require('broccoli-filter');
-var RSVP = require('rsvp');
 var SVGO = require('svgo');
 
 function SvgoFilter(inputTree, options) {
@@ -21,11 +20,7 @@ SvgoFilter.prototype.extensions = ['svg'];
 SvgoFilter.prototype.targetExtension = 'svg';
 
 SvgoFilter.prototype.processString = function (str) {
-	return new RSVP.Promise(function(resolve, reject) {
-		this.svgo.optimize(str, function (result) {
-			resolve(result.data);
-		});
-	}.bind(this));
+	return this.svgo.optimize(str).then(result => result.data);
 };
 
 module.exports = SvgoFilter;
