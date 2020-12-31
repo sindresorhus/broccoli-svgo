@@ -1,4 +1,4 @@
-# [broccoli](https://github.com/joliss/broccoli)-svgo [![Build Status](https://travis-ci.org/sindresorhus/broccoli-svgo.svg?branch=master)](https://travis-ci.org/sindresorhus/broccoli-svgo)
+# [broccoli](https://github.com/joliss/broccoli)-svgo
 
 > Minify SVG using [SVGO](https://github.com/svg/svgo)
 
