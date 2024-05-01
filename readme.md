@@ -7,8 +7,8 @@
 
 ## Install
 
-```
-$ npm install --save-dev broccoli-svgo
+```sh
+npm install --save-dev broccoli-svgo
 ```
 
 
